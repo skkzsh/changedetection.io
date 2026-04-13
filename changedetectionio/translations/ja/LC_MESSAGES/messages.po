@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: changedetection.io 0.53.6\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-04-14 02:02+0900\n"
+"POT-Creation-Date: 2026-04-14 15:53+0900\n"
 "PO-Revision-Date: 2026-03-31 23:52+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -753,10 +753,6 @@ msgid "Local Time & Date in Browser:"
 msgstr "ブラウザのローカル時刻と日付："
 
 #: changedetectionio/blueprint/settings/templates/settings.html
-msgid "The timezone was set from your browser, <strong>be sure to press save!</strong>"
-msgstr "タイムゾーンはブラウザから設定されました。<strong>必ず保存を押してください！</strong>"
-
-#: changedetectionio/blueprint/settings/templates/settings.html
 msgid "Enable this setting to open the diff page in a new tab. If disabled, the diff page will open in the current tab."
 msgstr "この設定を有効にすると差分ページが新しいタブで開きます。無効の場合は現在のタブで開きます。"
 
@@ -843,6 +839,26 @@ msgstr "タグが見つかりません"
 msgid "Updated"
 msgstr "更新しました"
 
+#: changedetectionio/blueprint/tags/form.py
+msgid "Activate for individual watches in this tag/group?"
+msgstr ""
+
+#: changedetectionio/blueprint/tags/form.py
+msgid "Auto-apply to watches with URLs matching"
+msgstr ""
+
+#: changedetectionio/blueprint/tags/form.py
+msgid "e.g. *://example.com/* or github.com/myorg"
+msgstr ""
+
+#: changedetectionio/blueprint/tags/form.py changedetectionio/blueprint/tags/templates/edit-tag.html
+msgid "Tag colour"
+msgstr "タグの色"
+
+#: changedetectionio/blueprint/tags/form.py
+msgid "Tag name"
+msgstr ""
+
 #: changedetectionio/blueprint/tags/templates/edit-tag.html changedetectionio/blueprint/ui/templates/edit.html
 msgid "Filters & Triggers"
 msgstr "フィルタとトリガー"
@@ -856,10 +872,6 @@ msgstr "URLが一致するウォッチにこのタグを自動適用します。
 #: changedetectionio/blueprint/tags/templates/edit-tag.html
 msgid "Currently matching watches"
 msgstr "現在マッチしているウォッチ"
-
-#: changedetectionio/blueprint/tags/templates/edit-tag.html
-msgid "Tag colour"
-msgstr "タグの色"
 
 #: changedetectionio/blueprint/tags/templates/edit-tag.html
 msgid "Custom colour"
@@ -1959,6 +1971,164 @@ msgstr "すべて再チェック"
 msgid "in '%(title)s'"
 msgstr "'%(title)s' 内"
 
+#: changedetectionio/conditions/__init__.py
+msgid "Choose one - Operator"
+msgstr ""
+
+#: changedetectionio/conditions/__init__.py
+msgid "Greater Than"
+msgstr ""
+
+#: changedetectionio/conditions/__init__.py
+msgid "Less Than"
+msgstr ""
+
+#: changedetectionio/conditions/__init__.py
+msgid "Greater Than or Equal To"
+msgstr ""
+
+#: changedetectionio/conditions/__init__.py
+msgid "Less Than or Equal To"
+msgstr ""
+
+#: changedetectionio/conditions/__init__.py
+msgid "Equals"
+msgstr ""
+
+#: changedetectionio/conditions/__init__.py
+msgid "Not Equals"
+msgstr ""
+
+#: changedetectionio/conditions/__init__.py
+msgid "Contains"
+msgstr ""
+
+#: changedetectionio/conditions/__init__.py
+msgid "Choose one - Field"
+msgstr ""
+
+#: changedetectionio/conditions/default_plugin.py
+msgid "Does NOT Contain"
+msgstr ""
+
+#: changedetectionio/conditions/default_plugin.py
+msgid "Text Starts With"
+msgstr ""
+
+#: changedetectionio/conditions/default_plugin.py
+msgid "Text Ends With"
+msgstr ""
+
+#: changedetectionio/conditions/default_plugin.py
+msgid "Length minimum"
+msgstr ""
+
+#: changedetectionio/conditions/default_plugin.py
+msgid "Length maximum"
+msgstr ""
+
+#: changedetectionio/conditions/default_plugin.py
+msgid "Text Matches Regex"
+msgstr ""
+
+#: changedetectionio/conditions/default_plugin.py
+msgid "Text Does NOT Match Regex"
+msgstr ""
+
+#: changedetectionio/conditions/default_plugin.py
+msgid "Extracted number after 'Filters & Triggers'"
+msgstr ""
+
+#: changedetectionio/conditions/default_plugin.py
+msgid "Page text after 'Filters & Triggers'"
+msgstr ""
+
+#: changedetectionio/conditions/form.py
+msgid "Field"
+msgstr ""
+
+#: changedetectionio/conditions/form.py
+msgid "Operator"
+msgstr ""
+
+#: changedetectionio/conditions/form.py
+msgid "A value"
+msgstr ""
+
+#: changedetectionio/conditions/form.py
+msgid "Operator is required."
+msgstr ""
+
+#: changedetectionio/conditions/form.py
+msgid "Field is required."
+msgstr ""
+
+#: changedetectionio/conditions/form.py
+msgid "Value is required."
+msgstr ""
+
+#: changedetectionio/conditions/plugins/levenshtein_plugin.py
+msgid "Levenshtein - Text similarity ratio"
+msgstr ""
+
+#: changedetectionio/conditions/plugins/levenshtein_plugin.py
+msgid "Levenshtein - Text change distance"
+msgstr ""
+
+#: changedetectionio/conditions/plugins/levenshtein_plugin.py
+msgid "Not enough history to calculate Levenshtein metrics"
+msgstr ""
+
+#: changedetectionio/conditions/plugins/levenshtein_plugin.py
+msgid "Snapshot too large for edit statistics, skipping."
+msgstr ""
+
+#: changedetectionio/conditions/plugins/levenshtein_plugin.py
+msgid "Unable to calculate Levenshtein metrics"
+msgstr ""
+
+#: changedetectionio/conditions/plugins/levenshtein_plugin.py
+msgid "Levenshtein Text Similarity Details"
+msgstr ""
+
+#: changedetectionio/conditions/plugins/levenshtein_plugin.py
+msgid "Raw distance (edits needed)"
+msgstr ""
+
+#: changedetectionio/conditions/plugins/levenshtein_plugin.py
+msgid "Similarity ratio"
+msgstr ""
+
+#: changedetectionio/conditions/plugins/levenshtein_plugin.py
+msgid "Percent similar"
+msgstr ""
+
+#: changedetectionio/conditions/plugins/levenshtein_plugin.py
+msgid ""
+"Levenshtein metrics compare the last two snapshots, measuring how many character edits are needed to transform one "
+"into the other."
+msgstr ""
+
+#: changedetectionio/conditions/plugins/levenshtein_plugin.py
+msgid "Error calculating Levenshtein metrics"
+msgstr ""
+
+#: changedetectionio/conditions/plugins/wordcount_plugin.py
+msgid "Word count of content"
+msgstr ""
+
+#: changedetectionio/conditions/plugins/wordcount_plugin.py
+msgid "Content Analysis"
+msgstr ""
+
+#: changedetectionio/conditions/plugins/wordcount_plugin.py
+msgid "Word count (latest snapshot)"
+msgstr ""
+
+#: changedetectionio/conditions/plugins/wordcount_plugin.py
+msgid "Word count is a simple measure of content length, calculated by splitting text on whitespace."
+msgstr ""
+
 #: changedetectionio/blueprint/watchlist/templates/watch-overview.html changedetectionio/flask_app.py
 #: changedetectionio/realtime/socket_server.py
 msgid "Not yet"
@@ -2242,8 +2412,24 @@ msgid "Selector"
 msgstr "セレクター"
 
 #: changedetectionio/forms.py
+msgid "CSS or xPath selector"
+msgstr ""
+
+#: changedetectionio/forms.py
 msgid "value"
 msgstr "値"
+
+#: changedetectionio/conditions/form.py changedetectionio/forms.py
+msgid "Value"
+msgstr ""
+
+#: changedetectionio/forms.py
+msgid "Web Page URL"
+msgstr ""
+
+#: changedetectionio/forms.py
+msgid "Group Tag"
+msgstr ""
 
 #: changedetectionio/forms.py
 msgid "Time Between Check"
@@ -2333,7 +2519,8 @@ msgstr "テキストが一致している間は変更検知をブロック"
 msgid "Execute JavaScript before change detection"
 msgstr "変更検知前にJavaScriptを実行"
 
-#: changedetectionio/blueprint/tags/templates/groups-overview.html changedetectionio/forms.py
+#: changedetectionio/blueprint/tags/form.py changedetectionio/blueprint/tags/templates/groups-overview.html
+#: changedetectionio/forms.py
 msgid "Save"
 msgstr "保存"
 
@@ -2401,7 +2588,7 @@ msgstr "無効なテンプレート構文: %(error)s"
 msgid "Invalid template syntax in \"%(header)s\" header: %(error)s"
 msgstr "\"%(header)s\" ヘッダーのテンプレート構文が無効です: %(error)s"
 
-#: changedetectionio/forms.py
+#: changedetectionio/blueprint/tags/form.py changedetectionio/forms.py
 msgid "Name"
 msgstr "名前"
 
@@ -2497,6 +2684,10 @@ msgstr "無視するテキスト"
 msgid "Ignore whitespace"
 msgstr "空白を無視"
 
+#: changedetectionio/forms.py
+msgid "Screenshot: Minimum Change Percentage"
+msgstr ""
+
 #: changedetectionio/forms.py changedetectionio/processors/image_ssim_diff/forms.py
 msgid "Must be between 0 and 100"
 msgstr "0から100の間で指定してください"
@@ -2564,6 +2755,26 @@ msgstr "抽出する正規表現"
 #: changedetectionio/forms.py
 msgid "Extract as CSV"
 msgstr "CSVとして抽出"
+
+#: changedetectionio/notification/__init__.py changedetectionio/templates/_common_fields.html
+msgid "Plain Text"
+msgstr ""
+
+#: changedetectionio/notification/__init__.py
+msgid "HTML"
+msgstr ""
+
+#: changedetectionio/notification/__init__.py
+msgid "HTML Color"
+msgstr ""
+
+#: changedetectionio/notification/__init__.py
+msgid "Markdown to HTML"
+msgstr ""
+
+#: changedetectionio/notification/__init__.py
+msgid "System default"
+msgstr ""
 
 #: changedetectionio/processors/extract.py
 msgid "No matches found while scanning all of the watch history for that RegEx."
@@ -3039,10 +3250,6 @@ msgid "Discord does not render HTML — switch to"
 msgstr ""
 
 #: changedetectionio/templates/_common_fields.html
-msgid "Plain Text"
-msgstr ""
-
-#: changedetectionio/templates/_common_fields.html
 msgid "format to avoid"
 msgstr ""
 
@@ -3224,8 +3431,8 @@ msgid ""
 "JSON - Limit text to this JSON rule, using either <a href=\"https://pypi.org/project/jsonpath-ng/\" "
 "target=\"new\">JSONPath</a> or <a href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> (if installed)."
 msgstr ""
-"JSON - このJSONルールでテキストを制限します。<a href=\"https://pypi.org/project/jsonpath-ng/\" "
-"target=\"new\">JSONPath</a> または <a href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a>（インストール済みの場合）が使用できます。"
+"JSON - このJSONルールでテキストを制限します。<a href=\"https://pypi.org/project/jsonpath-ng/\" target=\"new\">JSONPath</a> または <a "
+"href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a>（インストール済みの場合）が使用できます。"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "JSONPath: Prefix with <code>json:</code>, use <code>json:$</code> to force re-formatting if required,"
@@ -3248,8 +3455,8 @@ msgid ""
 "Using <a href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> allows for complex filtering and processing of"
 " JSON data with built-in functions, regex, filtering, and more."
 msgstr ""
-"<a href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> を使用すると、組み込み関数、正規表現、フィルタリングなどで"
-"JSONデータの複雑なフィルタリングと処理が可能です。"
+"<a href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> "
+"を使用すると、組み込み関数、正規表現、フィルタリングなどでJSONデータの複雑なフィルタリングと処理が可能です。"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "See examples and documentation"
@@ -3271,9 +3478,7 @@ msgstr "jqサポートはインストールされていません"
 msgid ""
 "XPath - Limit text to this XPath rule, simply start with a forward-slash. To specify XPath to be used explicitly or "
 "the XPath rule starts with an XPath function: Prefix with <code>xpath:</code>"
-msgstr ""
-"XPath - このXPathルールでテキストを制限します。スラッシュで始めるだけです。XPathを明示的に指定する場合やXPath関数で始まる場合: "
-"<code>xpath:</code> をプレフィックスとして付けてください"
+msgstr "XPath - このXPathルールでテキストを制限します。スラッシュで始めるだけです。XPathを明示的に指定する場合やXPath関数で始まる場合: <code>xpath:</code> をプレフィックスとして付けてください"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "test your XPath here"
@@ -3291,15 +3496,13 @@ msgstr "XPath1.0を使用するには: <code>xpath1:</code> をプレフィッ�
 msgid ""
 "Please be sure that you thoroughly understand how to write CSS, JSONPath, XPath, or jq selector rules before filing "
 "an issue on GitHub!"
-msgstr ""
-"GitHubでissueを作成する前に、CSS、JSONPath、XPath、またはjqセレクタールールの書き方を十分に理解してください！"
+msgstr "GitHubでissueを作成する前に、CSS、JSONPath、XPath、またはjqセレクタールールの書き方を十分に理解してください！"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid ""
 "Please be sure that you thoroughly understand how to write CSS, JSONPath, XPath rules before filing an issue on "
 "GitHub!"
-msgstr ""
-"GitHubでissueを作成する前に、CSS、JSONPath、XPathルールの書き方を十分に理解してください！"
+msgstr "GitHubでissueを作成する前に、CSS、JSONPath、XPathルールの書き方を十分に理解してください！"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "here for more CSS selector help"
@@ -3496,4 +3699,28 @@ msgstr "メイン設定"
 
 #~ msgid "\"Residential\" and \"Mobile\" proxy type can be more successfull than \"Data Center\" for blocked websites."
 #~ msgstr "ブロックされているウェブサイトには、「データセンター」よりも「住居用」や「モバイル」プロキシタイプが効果的です。"
+
+#~ msgid "Note! A Group tag overrides the restock and price detection here."
+#~ msgstr ""
+
+#~ msgid "Changes in price should trigger a notification"
+#~ msgstr ""
+
+#~ msgid "Minimum amount, Trigger a change/notification when the price drops <i>below</i> this value."
+#~ msgstr ""
+
+#~ msgid "Maximum amount, Trigger a change/notification when the price rises <i>above</i> this value."
+#~ msgstr ""
+
+#~ msgid "Price must change more than this % to trigger a change since the first check."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For example, If the product is $1,000 USD originally, "
+#~ "<strong>2%</strong> would mean it has to change more than "
+#~ "$20 since the first check."
+#~ msgstr ""
+
+#~ msgid "The timezone was set from your browser, <strong>be sure to press save!</strong>"
+#~ msgstr "タイムゾーンはブラウザから設定されました。<strong>必ず保存を押してください！</strong>"
 
