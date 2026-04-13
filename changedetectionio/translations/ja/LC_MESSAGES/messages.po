@@ -754,7 +754,7 @@ msgstr "ブラウザのローカル時刻と日付："
 
 #: changedetectionio/blueprint/settings/templates/settings.html
 msgid "The timezone was set from your browser, <strong>be sure to press save!</strong>"
-msgstr ""
+msgstr "タイムゾーンはブラウザから設定されました。<strong>必ず保存を押してください！</strong>"
 
 #: changedetectionio/blueprint/settings/templates/settings.html
 msgid "Enable this setting to open the diff page in a new tab. If disabled, the diff page will open in the current tab."
@@ -2698,35 +2698,35 @@ msgstr "製品が在庫ありに戻ったかどうかを検知します"
 
 #: changedetectionio/processors/templates/extract.html
 msgid "Screenshot"
-msgstr ""
+msgstr "スクリーンショット"
 
 #: changedetectionio/processors/templates/extract.html
 msgid "This tool will extract text data from all of the watch history."
-msgstr ""
+msgstr "このツールはすべてのウォッチ履歴からテキストデータを抽出します。"
 
 #: changedetectionio/processors/templates/extract.html
 msgid "A <strong>RegEx</strong> is a pattern that identifies exactly which part inside of the text that you want to extract."
-msgstr ""
+msgstr "<strong>正規表現（RegEx）</strong>は、テキスト内の抽出したい部分を正確に指定するパターンです。"
 
 #: changedetectionio/processors/templates/extract.html
 msgid "For example, to extract only the numbers from text"
-msgstr ""
+msgstr "例えば、テキストから数値のみを抽出するには"
 
 #: changedetectionio/processors/templates/extract.html
 msgid "Raw text"
-msgstr ""
+msgstr "元のテキスト"
 
 #: changedetectionio/processors/templates/extract.html
 msgid "RegEx to extract:"
-msgstr ""
+msgstr "抽出用の正規表現："
 
 #: changedetectionio/processors/templates/extract.html
 msgid "Be sure to test your RegEx here."
-msgstr ""
+msgstr "ここで正規表現をテストしてください。"
 
 #: changedetectionio/processors/templates/extract.html
 msgid "Each RegEx group bracket <code>()</code> will be in its own column, the first column value is always the date."
-msgstr ""
+msgstr "各正規表現のグループ括弧 <code>()</code> はそれぞれ独立した列になり、最初の列の値は常に日付です。"
 
 #: changedetectionio/processors/text_json_diff/processor.py
 msgid "Webpage Text/HTML, JSON and PDF changes"
@@ -3209,93 +3209,101 @@ msgstr "検索語を入力..."
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "Note!: //text() function does not work where the &lt;element&gt; contains &lt;![CDATA[]]&gt;"
-msgstr ""
+msgstr "注意！: //text() 関数は &lt;element&gt; が &lt;![CDATA[]]&gt; を含む場合は動作しません"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "One CSS, xPath 1 &amp; 2, JSON Path/JQ selector per line, <i>any</i> rules that matches will be used."
-msgstr ""
+msgstr "1行に1つのCSS、xPath 1 &amp; 2、JSON Path/JQ セレクターを指定します。一致する<i>すべて</i>のルールが使用されます。"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "CSS - Limit text to this CSS rule, only text matching this CSS rule is included."
-msgstr ""
+msgstr "CSS - このCSSルールでテキストを制限し、一致するテキストのみが含まれます。"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid ""
 "JSON - Limit text to this JSON rule, using either <a href=\"https://pypi.org/project/jsonpath-ng/\" "
 "target=\"new\">JSONPath</a> or <a href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> (if installed)."
 msgstr ""
+"JSON - このJSONルールでテキストを制限します。<a href=\"https://pypi.org/project/jsonpath-ng/\" "
+"target=\"new\">JSONPath</a> または <a href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a>（インストール済みの場合）が使用できます。"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "JSONPath: Prefix with <code>json:</code>, use <code>json:$</code> to force re-formatting if required,"
-msgstr ""
+msgstr "JSONPath: <code>json:</code> をプレフィックスとして付けます。必要に応じて <code>json:$</code> で再フォーマットを強制できます。"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "test your JSONPath here"
-msgstr ""
+msgstr "JSONPathのテストはこちら"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "jq: Prefix with <code>jq:</code> and"
-msgstr ""
+msgstr "jq: <code>jq:</code> をプレフィックスとして付けます。"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "test your jq here"
-msgstr ""
+msgstr "jqのテストはこちら"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid ""
 "Using <a href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> allows for complex filtering and processing of"
 " JSON data with built-in functions, regex, filtering, and more."
 msgstr ""
+"<a href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> を使用すると、組み込み関数、正規表現、フィルタリングなどで"
+"JSONデータの複雑なフィルタリングと処理が可能です。"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "See examples and documentation"
-msgstr ""
+msgstr "例とドキュメントは"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "here"
-msgstr ""
+msgstr "こちら"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "Prefix <code>jqraw:</code> outputs the results as text instead of a JSON list."
-msgstr ""
+msgstr "<code>jqraw:</code> をプレフィックスとして付けると、結果がJSONリストではなくテキストとして出力されます。"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "jq support not installed"
-msgstr ""
+msgstr "jqサポートはインストールされていません"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid ""
 "XPath - Limit text to this XPath rule, simply start with a forward-slash. To specify XPath to be used explicitly or "
 "the XPath rule starts with an XPath function: Prefix with <code>xpath:</code>"
 msgstr ""
+"XPath - このXPathルールでテキストを制限します。スラッシュで始めるだけです。XPathを明示的に指定する場合やXPath関数で始まる場合: "
+"<code>xpath:</code> をプレフィックスとして付けてください"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "test your XPath here"
-msgstr ""
+msgstr "XPathのテストはこちら"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "Example: Get all titles from an RSS feed"
-msgstr ""
+msgstr "例: RSSフィードからすべてのタイトルを取得"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "To use XPath1.0: Prefix with <code>xpath1:</code>"
-msgstr ""
+msgstr "XPath1.0を使用するには: <code>xpath1:</code> をプレフィックスとして付けてください"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid ""
 "Please be sure that you thoroughly understand how to write CSS, JSONPath, XPath, or jq selector rules before filing "
 "an issue on GitHub!"
 msgstr ""
+"GitHubでissueを作成する前に、CSS、JSONPath、XPath、またはjqセレクタールールの書き方を十分に理解してください！"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid ""
 "Please be sure that you thoroughly understand how to write CSS, JSONPath, XPath rules before filing an issue on "
 "GitHub!"
 msgstr ""
+"GitHubでissueを作成する前に、CSS、JSONPath、XPathルールの書き方を十分に理解してください！"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "here for more CSS selector help"
-msgstr ""
+msgstr "CSSセレクターのヘルプはこちら"
 
 #: changedetectionio/templates/edit/text-options.html
 msgid "Text to wait for before triggering a change/notification, all text and regex are tested case-insensitive."
