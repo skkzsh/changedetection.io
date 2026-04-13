@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: changedetection.io 0.53.6\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-04-11 04:15+0200\n"
+"POT-Creation-Date: 2026-04-14 02:02+0900\n"
 "PO-Revision-Date: 2026-03-31 23:52+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -229,7 +229,7 @@ msgstr "バックアップセクション"
 msgid "Enter one URL per line, and optionally add tags for each URL after a space, delineated by comma (,):"
 msgstr "1行に1つのURLを入力し、必要に応じてスペースの後にカンマ（,）区切りでタグを追加できます："
 
-#: changedetectionio/blueprint/imports/templates/import.html
+#: changedetectionio/blueprint/imports/templates/import.html changedetectionio/templates/edit/include_subtract.html
 msgid "Example:"
 msgstr "例："
 
@@ -600,15 +600,15 @@ msgstr "アンカータグのコンテンツをレンダリング（デフォル
 msgid "Changing this could affect the content of your existing watches, possibly trigger alerts etc."
 msgstr "これを変更すると、既存のウォッチのコンテンツに影響し、アラートが発生する可能性があります。"
 
-#: changedetectionio/blueprint/settings/templates/settings.html
+#: changedetectionio/blueprint/settings/templates/settings.html changedetectionio/templates/edit/include_subtract.html
 msgid "Remove HTML element(s) by CSS and XPath selectors before text conversion."
 msgstr "テキスト変換前に CSS および XPath セレクターで HTML 要素を削除します。"
 
-#: changedetectionio/blueprint/settings/templates/settings.html
+#: changedetectionio/blueprint/settings/templates/settings.html changedetectionio/templates/edit/include_subtract.html
 msgid "Don't paste HTML here, use only CSS and XPath selectors"
 msgstr "ここにHTMLを貼り付けないでください。CSSとXPathセレクターのみを使用してください。"
 
-#: changedetectionio/blueprint/settings/templates/settings.html
+#: changedetectionio/blueprint/settings/templates/settings.html changedetectionio/templates/edit/include_subtract.html
 msgid "Add multiple elements, CSS or XPath selectors per line to ignore multiple parts of the HTML."
 msgstr "1行に1つのCSSまたはXPathセレクターを追加して、HTMLの複数の部分を無視できます。"
 
@@ -751,6 +751,10 @@ msgstr "サーバーのUTC時刻と日付："
 #: changedetectionio/blueprint/settings/templates/settings.html
 msgid "Local Time & Date in Browser:"
 msgstr "ブラウザのローカル時刻と日付："
+
+#: changedetectionio/blueprint/settings/templates/settings.html
+msgid "The timezone was set from your browser, <strong>be sure to press save!</strong>"
+msgstr ""
 
 #: changedetectionio/blueprint/settings/templates/settings.html
 msgid "Enable this setting to open the diff page in a new tab. If disabled, the diff page will open in the current tab."
@@ -1275,14 +1279,17 @@ msgid "Jump"
 msgstr "ジャンプ"
 
 #: changedetectionio/blueprint/ui/templates/diff.html changedetectionio/blueprint/ui/templates/preview.html
+#: changedetectionio/processors/templates/extract.html
 msgid "Error Text"
 msgstr "エラーテキスト"
 
 #: changedetectionio/blueprint/ui/templates/diff.html changedetectionio/blueprint/ui/templates/preview.html
+#: changedetectionio/processors/templates/extract.html
 msgid "Error Screenshot"
 msgstr "エラースクリーンショット"
 
 #: changedetectionio/blueprint/ui/templates/diff.html changedetectionio/blueprint/ui/templates/preview.html
+#: changedetectionio/processors/templates/extract.html
 msgid "Text"
 msgstr "テキスト"
 
@@ -1290,7 +1297,7 @@ msgstr "テキスト"
 msgid "Current screenshot"
 msgstr "現在のスクリーンショット"
 
-#: changedetectionio/blueprint/ui/templates/diff.html
+#: changedetectionio/blueprint/ui/templates/diff.html changedetectionio/processors/templates/extract.html
 msgid "Extract Data"
 msgstr "データを抽出"
 
@@ -2689,6 +2696,38 @@ msgstr "単一製品ページの在庫補充＆価格検知"
 msgid "Detects if the product goes back to in-stock"
 msgstr "製品が在庫ありに戻ったかどうかを検知します"
 
+#: changedetectionio/processors/templates/extract.html
+msgid "Screenshot"
+msgstr ""
+
+#: changedetectionio/processors/templates/extract.html
+msgid "This tool will extract text data from all of the watch history."
+msgstr ""
+
+#: changedetectionio/processors/templates/extract.html
+msgid "A <strong>RegEx</strong> is a pattern that identifies exactly which part inside of the text that you want to extract."
+msgstr ""
+
+#: changedetectionio/processors/templates/extract.html
+msgid "For example, to extract only the numbers from text"
+msgstr ""
+
+#: changedetectionio/processors/templates/extract.html
+msgid "Raw text"
+msgstr ""
+
+#: changedetectionio/processors/templates/extract.html
+msgid "RegEx to extract:"
+msgstr ""
+
+#: changedetectionio/processors/templates/extract.html
+msgid "Be sure to test your RegEx here."
+msgstr ""
+
+#: changedetectionio/processors/templates/extract.html
+msgid "Each RegEx group bracket <code>()</code> will be in its own column, the first column value is always the date."
+msgstr ""
+
 #: changedetectionio/processors/text_json_diff/processor.py
 msgid "Webpage Text/HTML, JSON and PDF changes"
 msgstr "ウェブページのテキスト/HTML、JSONおよびPDFの変更"
@@ -2880,7 +2919,7 @@ msgstr "重要な設定に関するメモについては、通知サービスの
 msgid "Use"
 msgstr " "
 
-#: changedetectionio/templates/_common_fields.html
+#: changedetectionio/templates/_common_fields.html changedetectionio/templates/edit/include_subtract.html
 msgid "Show advanced help and tips"
 msgstr "詳細なヘルプとヒントを表示"
 
@@ -2990,6 +3029,26 @@ msgstr "すべての Jinja2 組み込みフィルタの完全なリファレン�
 #: changedetectionio/templates/_common_fields.html
 msgid "Format for all notifications"
 msgstr "すべての通知のフォーマット"
+
+#: changedetectionio/templates/_common_fields.html
+msgid "Note"
+msgstr ""
+
+#: changedetectionio/templates/_common_fields.html
+msgid "Discord does not render HTML — switch to"
+msgstr ""
+
+#: changedetectionio/templates/_common_fields.html
+msgid "Plain Text"
+msgstr ""
+
+#: changedetectionio/templates/_common_fields.html
+msgid "format to avoid"
+msgstr ""
+
+#: changedetectionio/templates/_common_fields.html
+msgid "and other HTML entities appearing literally in your notifications."
+msgstr ""
 
 #: changedetectionio/templates/_helpers.html
 msgid "Entry"
@@ -3147,6 +3206,96 @@ msgstr "-"
 #: changedetectionio/templates/base.html
 msgid "Enter search term..."
 msgstr "検索語を入力..."
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid "Note!: //text() function does not work where the &lt;element&gt; contains &lt;![CDATA[]]&gt;"
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid "One CSS, xPath 1 &amp; 2, JSON Path/JQ selector per line, <i>any</i> rules that matches will be used."
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid "CSS - Limit text to this CSS rule, only text matching this CSS rule is included."
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid ""
+"JSON - Limit text to this JSON rule, using either <a href=\"https://pypi.org/project/jsonpath-ng/\" "
+"target=\"new\">JSONPath</a> or <a href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> (if installed)."
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid "JSONPath: Prefix with <code>json:</code>, use <code>json:$</code> to force re-formatting if required,"
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid "test your JSONPath here"
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid "jq: Prefix with <code>jq:</code> and"
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid "test your jq here"
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid ""
+"Using <a href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> allows for complex filtering and processing of"
+" JSON data with built-in functions, regex, filtering, and more."
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid "See examples and documentation"
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid "here"
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid "Prefix <code>jqraw:</code> outputs the results as text instead of a JSON list."
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid "jq support not installed"
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid ""
+"XPath - Limit text to this XPath rule, simply start with a forward-slash. To specify XPath to be used explicitly or "
+"the XPath rule starts with an XPath function: Prefix with <code>xpath:</code>"
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid "test your XPath here"
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid "Example: Get all titles from an RSS feed"
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid "To use XPath1.0: Prefix with <code>xpath1:</code>"
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid ""
+"Please be sure that you thoroughly understand how to write CSS, JSONPath, XPath, or jq selector rules before filing "
+"an issue on GitHub!"
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid ""
+"Please be sure that you thoroughly understand how to write CSS, JSONPath, XPath rules before filing an issue on "
+"GitHub!"
+msgstr ""
+
+#: changedetectionio/templates/edit/include_subtract.html
+msgid "here for more CSS selector help"
+msgstr ""
 
 #: changedetectionio/templates/edit/text-options.html
 msgid "Text to wait for before triggering a change/notification, all text and regex are tested case-insensitive."
