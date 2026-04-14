@@ -2917,11 +2917,11 @@ msgstr "このツールはすべてのウォッチ履歴からテキストデー
 
 #: changedetectionio/processors/templates/extract.html
 msgid "RegEx"
-msgstr ""
+msgstr "正規表現"
 
 #: changedetectionio/processors/templates/extract.html
 msgid "is a pattern that identifies exactly which part inside of the text that you want to extract."
-msgstr ""
+msgstr " は、テキストから抽出したい部分を正確に識別するパターンです。"
 
 #: changedetectionio/processors/templates/extract.html
 msgid "For example, to extract only the numbers from text"
@@ -2941,11 +2941,11 @@ msgstr "ここで正規表現をテストしてください。"
 
 #: changedetectionio/processors/templates/extract.html
 msgid "Each RegEx group bracket"
-msgstr ""
+msgstr "正規表現の各グループ括弧"
 
 #: changedetectionio/processors/templates/extract.html
 msgid "will be in its own column, the first column value is always the date."
-msgstr ""
+msgstr "は独立したカラムとなり、最初のカラムの値は常に日付です。"
 
 #: changedetectionio/processors/text_json_diff/processor.py
 msgid "Webpage Text/HTML, JSON and PDF changes"
@@ -3432,7 +3432,7 @@ msgstr "検索語を入力..."
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "Note!: //text() function does not work where the <element> contains <![CDATA[]]>"
-msgstr ""
+msgstr "注意！: <element> が <![CDATA[]]> を含む場合、//text() 関数は動作しません"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "One CSS, xPath 1 &amp; 2, JSON Path/JQ selector per line, <i>any</i> rules that matches will be used."
@@ -3455,6 +3455,8 @@ msgid ""
 "JSONPath: Prefix with <code>json:</code>, use <code>json:$</code> to force re-formatting if required, <a "
 "href=\"https://jsonpath.com/\" target=\"new\">test your JSONPath here</a>."
 msgstr ""
+"JSONPath: <code>json:</code> を先頭に付けます。必要に応じて <code>json:$</code> を使うと再フォーマットを強制できます。<a "
+"href=\"https://jsonpath.com/\" target=\"new\">JSONPath はこちらでテストできます</a>。"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid ""
@@ -3464,6 +3466,10 @@ msgid ""
 "href=\"https://stedolan.github.io/jq/manual/\" target=\"new\">here</a>. Prefix <code>jqraw:</code> outputs the "
 "results as text instead of a JSON list."
 msgstr ""
+"jq: <code>jq:</code> を先頭に付けます。<a href=\"https://jqplay.org/\" target=\"new\">jq はこちらでテストできます</a>。<a "
+"href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> を使うと、組み込み関数、正規表現、フィルタリングなどで JSON データの複雑なフィルタリングと処理が可能です。"
+"使用例とドキュメントは<a href=\"https://stedolan.github.io/jq/manual/\" target=\"new\">こちら</a>を参照してください。"
+"<code>jqraw:</code> を先頭に付けると、結果が JSON リストではなくテキストとして出力されます。"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "jq support not installed"
