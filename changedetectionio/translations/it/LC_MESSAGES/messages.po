@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-04-14 15:53+0900\n"
+"POT-Creation-Date: 2026-04-14 16:35+0900\n"
 "PO-Revision-Date: 2026-01-02 15:32+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: it\n"
@@ -3326,6 +3326,10 @@ msgstr "Nessuna rilevazione se questo testo esiste."
 #: changedetectionio/templates/_helpers.html
 msgid "Blocked text"
 msgstr "Testo bloccato"
+
+#: changedetectionio/templates/base.html
+msgid "A new version is available"
+msgstr ""
 
 #: changedetectionio/templates/base.html
 msgid "Search, or Use Alt+S Key"

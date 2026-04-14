@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  changedetection.io\n"
 "Report-Msgid-Bugs-To: https://github.com/dgtlmoon/changedetection.io\n"
-"POT-Creation-Date: 2026-04-14 15:53+0900\n"
+"POT-Creation-Date: 2026-04-14 16:35+0900\n"
 "PO-Revision-Date: 2026-02-19 12:30+0100\n"
 "Last-Translator: \n"
 "Language: uk\n"
@@ -3341,6 +3341,10 @@ msgstr "Виявлення змін не відбудеться, оскільк�
 #: changedetectionio/templates/_helpers.html
 msgid "Blocked text"
 msgstr "Блокуючий текст"
+
+#: changedetectionio/templates/base.html
+msgid "A new version is available"
+msgstr ""
 
 #: changedetectionio/templates/base.html
 msgid "Search, or Use Alt+S Key"

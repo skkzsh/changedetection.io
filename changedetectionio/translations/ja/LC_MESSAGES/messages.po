@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: changedetection.io 0.53.6\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-04-14 15:53+0900\n"
+"POT-Creation-Date: 2026-04-14 16:35+0900\n"
 "PO-Revision-Date: 2026-03-31 23:52+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -3245,7 +3245,8 @@ msgstr "すべての通知のフォーマット"
 msgid "Note"
 msgstr "注意"
 
-# 訳注: "Discord does not render HTML — switch to <Plain Text> format to avoid <&nbsp;> and other HTML entities appearing literally in your notifications."
+# 訳注: "Discord does not render HTML — switch to <Plain Text> format to avoid <&nbsp;> and other HTML entities appearing
+# literally in your notifications."
 # → 「Discord は HTML をレンダリングしません。プレーンテキスト形式に切り替えて、通知で &nbsp; などの HTML エンティティがそのまま表示されるのを回避してください。」
 # 3分割された文をプレースホルダー位置に合わせて再配分
 #: changedetectionio/templates/_common_fields.html
@@ -3378,6 +3379,10 @@ msgstr "このテキストが存在するため、変更検知は実行されま
 #: changedetectionio/templates/_helpers.html
 msgid "Blocked text"
 msgstr "ブロックされたテキスト"
+
+#: changedetectionio/templates/base.html
+msgid "A new version is available"
+msgstr "新しいバージョンが利用可能です"
 
 #: changedetectionio/templates/base.html
 msgid "Search, or Use Alt+S Key"
