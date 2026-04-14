@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: changedetection.io 0.53.6\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-04-14 17:34+0900\n"
+"POT-Creation-Date: 2026-04-14 18:12+0900\n"
 "PO-Revision-Date: 2026-03-31 23:52+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -2756,26 +2756,6 @@ msgstr "抽出する正規表現"
 msgid "Extract as CSV"
 msgstr "CSVとして抽出"
 
-#: changedetectionio/notification/__init__.py changedetectionio/templates/_common_fields.html
-msgid "Plain Text"
-msgstr "プレーンテキスト"
-
-#: changedetectionio/notification/__init__.py
-msgid "HTML"
-msgstr "HTML"
-
-#: changedetectionio/notification/__init__.py
-msgid "HTML Color"
-msgstr "HTMLカラー"
-
-#: changedetectionio/notification/__init__.py
-msgid "Markdown to HTML"
-msgstr "MarkdownからHTML"
-
-#: changedetectionio/notification/__init__.py
-msgid "System default"
-msgstr "システムデフォルト"
-
 #: changedetectionio/processors/extract.py
 msgid "No matches found while scanning all of the watch history for that RegEx."
 msgstr "その正規表現についてウォッチ履歴全体をスキャンしましたが、一致するものが見つかりませんでした。"
@@ -2916,12 +2896,8 @@ msgid "This tool will extract text data from all of the watch history."
 msgstr "このツールはすべてのウォッチ履歴からテキストデータを抽出します。"
 
 #: changedetectionio/processors/templates/extract.html
-msgid "RegEx"
-msgstr "正規表現"
-
-#: changedetectionio/processors/templates/extract.html
-msgid "is a pattern that identifies exactly which part inside of the text that you want to extract."
-msgstr " は、テキストから抽出したい部分を正確に識別するパターンです。"
+msgid "A <strong>RegEx</strong> is a pattern that identifies exactly which part inside of the text that you want to extract."
+msgstr ""
 
 #: changedetectionio/processors/templates/extract.html
 msgid "For example, to extract only the numbers from text"
@@ -3262,6 +3238,10 @@ msgid "Discord does not render HTML — switch to"
 msgstr "Discord は HTML をレンダリングしません。"
 
 #: changedetectionio/templates/_common_fields.html
+msgid "Plain Text"
+msgstr "プレーンテキスト"
+
+#: changedetectionio/templates/_common_fields.html
 msgid "format to avoid"
 msgstr " 形式に切り替えて、通知で "
 
@@ -3455,8 +3435,8 @@ msgid ""
 "JSONPath: Prefix with <code>json:</code>, use <code>json:$</code> to force re-formatting if required, <a "
 "href=\"https://jsonpath.com/\" target=\"new\">test your JSONPath here</a>."
 msgstr ""
-"JSONPath: <code>json:</code> を先頭に付けます。必要に応じて <code>json:$</code> を使うと再フォーマットを強制できます。<a "
-"href=\"https://jsonpath.com/\" target=\"new\">JSONPath はこちらでテストできます</a>。"
+"JSONPath: <code>json:</code> を先頭に付けます。必要に応じて <code>json:$</code> を使うと再フォーマットを強制できます。<a href=\"https://jsonpath.com/\""
+" target=\"new\">JSONPath はこちらでテストできます</a>。"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid ""
@@ -3467,9 +3447,9 @@ msgid ""
 "results as text instead of a JSON list."
 msgstr ""
 "jq: <code>jq:</code> を先頭に付けます。<a href=\"https://jqplay.org/\" target=\"new\">jq はこちらでテストできます</a>。<a "
-"href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> を使うと、組み込み関数、正規表現、フィルタリングなどで JSON データの複雑なフィルタリングと処理が可能です。"
-"使用例とドキュメントは<a href=\"https://stedolan.github.io/jq/manual/\" target=\"new\">こちら</a>を参照してください。"
-"<code>jqraw:</code> を先頭に付けると、結果が JSON リストではなくテキストとして出力されます。"
+"href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> を使うと、組み込み関数、正規表現、フィルタリングなどで JSON "
+"データの複雑なフィルタリングと処理が可能です。使用例とドキュメントは<a href=\"https://stedolan.github.io/jq/manual/\" "
+"target=\"new\">こちら</a>を参照してください。<code>jqraw:</code> を先頭に付けると、結果が JSON リストではなくテキストとして出力されます。"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "jq support not installed"
@@ -3765,4 +3745,22 @@ msgstr "メイン設定"
 
 #~ msgid "Prefix <code>jqraw:</code> outputs the results as text instead of a JSON list."
 #~ msgstr "<code>jqraw:</code> をプレフィックスとして付けると、結果がJSONリストではなくテキストとして出力されます。"
+
+#~ msgid "HTML"
+#~ msgstr "HTML"
+
+#~ msgid "HTML Color"
+#~ msgstr "HTMLカラー"
+
+#~ msgid "Markdown to HTML"
+#~ msgstr "MarkdownからHTML"
+
+#~ msgid "System default"
+#~ msgstr "システムデフォルト"
+
+#~ msgid "RegEx"
+#~ msgstr "正規表現"
+
+#~ msgid "is a pattern that identifies exactly which part inside of the text that you want to extract."
+#~ msgstr " は、テキストから抽出したい部分を正確に識別するパターンです。"
 

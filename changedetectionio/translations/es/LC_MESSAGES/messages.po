@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: changedetection.io 0.53.6\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-04-14 17:34+0900\n"
+"POT-Creation-Date: 2026-04-14 18:12+0900\n"
 "PO-Revision-Date: 2026-03-20 18:13+0100\n"
 "Last-Translator: Adrian Gonzalez <adrian@example.com>\n"
 "Language: es\n"
@@ -2787,26 +2787,6 @@ msgstr "RegEx para extraer"
 msgid "Extract as CSV"
 msgstr "Extraer como CSV"
 
-#: changedetectionio/notification/__init__.py changedetectionio/templates/_common_fields.html
-msgid "Plain Text"
-msgstr ""
-
-#: changedetectionio/notification/__init__.py
-msgid "HTML"
-msgstr ""
-
-#: changedetectionio/notification/__init__.py
-msgid "HTML Color"
-msgstr ""
-
-#: changedetectionio/notification/__init__.py
-msgid "Markdown to HTML"
-msgstr ""
-
-#: changedetectionio/notification/__init__.py
-msgid "System default"
-msgstr ""
-
 #: changedetectionio/processors/extract.py
 msgid "No matches found while scanning all of the watch history for that RegEx."
 msgstr "No se encontraron coincidencias al escanear todo el historial de visualización para esa expresión regular."
@@ -2947,11 +2927,7 @@ msgid "This tool will extract text data from all of the watch history."
 msgstr ""
 
 #: changedetectionio/processors/templates/extract.html
-msgid "RegEx"
-msgstr ""
-
-#: changedetectionio/processors/templates/extract.html
-msgid "is a pattern that identifies exactly which part inside of the text that you want to extract."
+msgid "A <strong>RegEx</strong> is a pattern that identifies exactly which part inside of the text that you want to extract."
 msgstr ""
 
 #: changedetectionio/processors/templates/extract.html
@@ -3269,6 +3245,10 @@ msgstr ""
 
 #: changedetectionio/templates/_common_fields.html
 msgid "Discord does not render HTML — switch to"
+msgstr ""
+
+#: changedetectionio/templates/_common_fields.html
+msgid "Plain Text"
 msgstr ""
 
 #: changedetectionio/templates/_common_fields.html
@@ -3770,5 +3750,23 @@ msgstr "Configuraciones principales"
 #~ msgstr ""
 
 #~ msgid "Prefix <code>jqraw:</code> outputs the results as text instead of a JSON list."
+#~ msgstr ""
+
+#~ msgid "HTML"
+#~ msgstr ""
+
+#~ msgid "HTML Color"
+#~ msgstr ""
+
+#~ msgid "Markdown to HTML"
+#~ msgstr ""
+
+#~ msgid "System default"
+#~ msgstr ""
+
+#~ msgid "RegEx"
+#~ msgstr ""
+
+#~ msgid "is a pattern that identifies exactly which part inside of the text that you want to extract."
 #~ msgstr ""
 

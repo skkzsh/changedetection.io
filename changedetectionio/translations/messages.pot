@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: changedetection.io 0.54.9\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-04-14 17:34+0900\n"
+"POT-Creation-Date: 2026-04-14 18:12+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2726,26 +2726,6 @@ msgstr ""
 msgid "Extract as CSV"
 msgstr ""
 
-#: changedetectionio/notification/__init__.py changedetectionio/templates/_common_fields.html
-msgid "Plain Text"
-msgstr ""
-
-#: changedetectionio/notification/__init__.py
-msgid "HTML"
-msgstr ""
-
-#: changedetectionio/notification/__init__.py
-msgid "HTML Color"
-msgstr ""
-
-#: changedetectionio/notification/__init__.py
-msgid "Markdown to HTML"
-msgstr ""
-
-#: changedetectionio/notification/__init__.py
-msgid "System default"
-msgstr ""
-
 #: changedetectionio/processors/extract.py
 msgid "No matches found while scanning all of the watch history for that RegEx."
 msgstr ""
@@ -2886,11 +2866,7 @@ msgid "This tool will extract text data from all of the watch history."
 msgstr ""
 
 #: changedetectionio/processors/templates/extract.html
-msgid "RegEx"
-msgstr ""
-
-#: changedetectionio/processors/templates/extract.html
-msgid "is a pattern that identifies exactly which part inside of the text that you want to extract."
+msgid "A <strong>RegEx</strong> is a pattern that identifies exactly which part inside of the text that you want to extract."
 msgstr ""
 
 #: changedetectionio/processors/templates/extract.html
@@ -3206,6 +3182,10 @@ msgstr ""
 
 #: changedetectionio/templates/_common_fields.html
 msgid "Discord does not render HTML — switch to"
+msgstr ""
+
+#: changedetectionio/templates/_common_fields.html
+msgid "Plain Text"
 msgstr ""
 
 #: changedetectionio/templates/_common_fields.html
