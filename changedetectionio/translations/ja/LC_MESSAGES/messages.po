@@ -2897,7 +2897,7 @@ msgstr "このツールはすべてのウォッチ履歴からテキストデー
 
 #: changedetectionio/processors/templates/extract.html
 msgid "A <strong>RegEx</strong> is a pattern that identifies exactly which part inside of the text that you want to extract."
-msgstr ""
+msgstr "<strong>RegEx</strong> は、抽出したいテキスト内の部分を正確に特定するためのパターンです。"
 
 #: changedetectionio/processors/templates/extract.html
 msgid "For example, to extract only the numbers from text"
