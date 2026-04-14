@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-04-14 16:35+0900\n"
+"POT-Creation-Date: 2026-04-14 17:34+0900\n"
 "PO-Revision-Date: 2026-01-02 15:32+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: it\n"
@@ -2889,7 +2889,11 @@ msgid "This tool will extract text data from all of the watch history."
 msgstr ""
 
 #: changedetectionio/processors/templates/extract.html
-msgid "A <strong>RegEx</strong> is a pattern that identifies exactly which part inside of the text that you want to extract."
+msgid "RegEx"
+msgstr ""
+
+#: changedetectionio/processors/templates/extract.html
+msgid "is a pattern that identifies exactly which part inside of the text that you want to extract."
 msgstr ""
 
 #: changedetectionio/processors/templates/extract.html
@@ -2909,7 +2913,11 @@ msgid "Be sure to test your RegEx here."
 msgstr ""
 
 #: changedetectionio/processors/templates/extract.html
-msgid "Each RegEx group bracket <code>()</code> will be in its own column, the first column value is always the date."
+msgid "Each RegEx group bracket"
+msgstr ""
+
+#: changedetectionio/processors/templates/extract.html
+msgid "will be in its own column, the first column value is always the date."
 msgstr ""
 
 #: changedetectionio/processors/text_json_diff/processor.py
@@ -3368,7 +3376,7 @@ msgid "Enter search term..."
 msgstr ""
 
 #: changedetectionio/templates/edit/include_subtract.html
-msgid "Note!: //text() function does not work where the &lt;element&gt; contains &lt;![CDATA[]]&gt;"
+msgid "Note!: //text() function does not work where the <element> contains <![CDATA[]]>"
 msgstr ""
 
 #: changedetectionio/templates/edit/include_subtract.html
@@ -3386,37 +3394,18 @@ msgid ""
 msgstr ""
 
 #: changedetectionio/templates/edit/include_subtract.html
-msgid "JSONPath: Prefix with <code>json:</code>, use <code>json:$</code> to force re-formatting if required,"
-msgstr ""
-
-#: changedetectionio/templates/edit/include_subtract.html
-msgid "test your JSONPath here"
-msgstr ""
-
-#: changedetectionio/templates/edit/include_subtract.html
-msgid "jq: Prefix with <code>jq:</code> and"
-msgstr ""
-
-#: changedetectionio/templates/edit/include_subtract.html
-msgid "test your jq here"
+msgid ""
+"JSONPath: Prefix with <code>json:</code>, use <code>json:$</code> to force re-formatting if required, <a "
+"href=\"https://jsonpath.com/\" target=\"new\">test your JSONPath here</a>."
 msgstr ""
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid ""
-"Using <a href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> allows for complex filtering and processing of"
-" JSON data with built-in functions, regex, filtering, and more."
-msgstr ""
-
-#: changedetectionio/templates/edit/include_subtract.html
-msgid "See examples and documentation"
-msgstr ""
-
-#: changedetectionio/templates/edit/include_subtract.html
-msgid "here"
-msgstr ""
-
-#: changedetectionio/templates/edit/include_subtract.html
-msgid "Prefix <code>jqraw:</code> outputs the results as text instead of a JSON list."
+"jq: Prefix with <code>jq:</code> and <a href=\"https://jqplay.org/\" target=\"new\">test your jq here</a>. Using <a "
+"href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> allows for complex filtering and processing of JSON "
+"data with built-in functions, regex, filtering, and more. See examples and documentation <a "
+"href=\"https://stedolan.github.io/jq/manual/\" target=\"new\">here</a>. Prefix <code>jqraw:</code> outputs the "
+"results as text instead of a JSON list."
 msgstr ""
 
 #: changedetectionio/templates/edit/include_subtract.html
@@ -3728,5 +3717,44 @@ msgstr "Impostazioni principali"
 #~ msgstr ""
 
 #~ msgid "The timezone was set from your browser, <strong>be sure to press save!</strong>"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A <strong>RegEx</strong> is a pattern that identifies exactly "
+#~ "which part inside of the text that you want to "
+#~ "extract."
+#~ msgstr ""
+
+#~ msgid "Each RegEx group bracket <code>()</code> will be in its own column, the first column value is always the date."
+#~ msgstr ""
+
+#~ msgid "Note!: //text() function does not work where the &lt;element&gt; contains &lt;![CDATA[]]&gt;"
+#~ msgstr ""
+
+#~ msgid "JSONPath: Prefix with <code>json:</code>, use <code>json:$</code> to force re-formatting if required,"
+#~ msgstr ""
+
+#~ msgid "test your JSONPath here"
+#~ msgstr ""
+
+#~ msgid "jq: Prefix with <code>jq:</code> and"
+#~ msgstr ""
+
+#~ msgid "test your jq here"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Using <a href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> allows for"
+#~ " complex filtering and processing of JSON data with built-"
+#~ "in functions, regex, filtering, and more."
+#~ msgstr ""
+
+#~ msgid "See examples and documentation"
+#~ msgstr ""
+
+#~ msgid "here"
+#~ msgstr ""
+
+#~ msgid "Prefix <code>jqraw:</code> outputs the results as text instead of a JSON list."
 #~ msgstr ""
 

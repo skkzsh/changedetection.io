@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: changedetection.io 0.53.6\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-04-14 16:35+0900\n"
+"POT-Creation-Date: 2026-04-14 17:34+0900\n"
 "PO-Revision-Date: 2026-03-31 23:52+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -2916,8 +2916,12 @@ msgid "This tool will extract text data from all of the watch history."
 msgstr "このツールはすべてのウォッチ履歴からテキストデータを抽出します。"
 
 #: changedetectionio/processors/templates/extract.html
-msgid "A <strong>RegEx</strong> is a pattern that identifies exactly which part inside of the text that you want to extract."
-msgstr "<strong>正規表現（RegEx）</strong>は、テキスト内の抽出したい部分を正確に指定するパターンです。"
+msgid "RegEx"
+msgstr ""
+
+#: changedetectionio/processors/templates/extract.html
+msgid "is a pattern that identifies exactly which part inside of the text that you want to extract."
+msgstr ""
 
 #: changedetectionio/processors/templates/extract.html
 msgid "For example, to extract only the numbers from text"
@@ -2936,8 +2940,12 @@ msgid "Be sure to test your RegEx here."
 msgstr "ここで正規表現をテストしてください。"
 
 #: changedetectionio/processors/templates/extract.html
-msgid "Each RegEx group bracket <code>()</code> will be in its own column, the first column value is always the date."
-msgstr "各正規表現のグループ括弧 <code>()</code> はそれぞれ独立した列になり、最初の列の値は常に日付です。"
+msgid "Each RegEx group bracket"
+msgstr ""
+
+#: changedetectionio/processors/templates/extract.html
+msgid "will be in its own column, the first column value is always the date."
+msgstr ""
 
 #: changedetectionio/processors/text_json_diff/processor.py
 msgid "Webpage Text/HTML, JSON and PDF changes"
@@ -3423,8 +3431,8 @@ msgid "Enter search term..."
 msgstr "検索語を入力..."
 
 #: changedetectionio/templates/edit/include_subtract.html
-msgid "Note!: //text() function does not work where the &lt;element&gt; contains &lt;![CDATA[]]&gt;"
-msgstr "注意！: //text() 関数は &lt;element&gt; が &lt;![CDATA[]]&gt; を含む場合は動作しません"
+msgid "Note!: //text() function does not work where the <element> contains <![CDATA[]]>"
+msgstr ""
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "One CSS, xPath 1 &amp; 2, JSON Path/JQ selector per line, <i>any</i> rules that matches will be used."
@@ -3443,40 +3451,19 @@ msgstr ""
 "href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a>（インストール済みの場合）が使用できます。"
 
 #: changedetectionio/templates/edit/include_subtract.html
-msgid "JSONPath: Prefix with <code>json:</code>, use <code>json:$</code> to force re-formatting if required,"
-msgstr "JSONPath: <code>json:</code> をプレフィックスとして付けます。必要に応じて <code>json:$</code> で再フォーマットを強制できます。"
-
-#: changedetectionio/templates/edit/include_subtract.html
-msgid "test your JSONPath here"
-msgstr "JSONPathのテストはこちら"
-
-#: changedetectionio/templates/edit/include_subtract.html
-msgid "jq: Prefix with <code>jq:</code> and"
-msgstr "jq: <code>jq:</code> をプレフィックスとして付けます。"
-
-#: changedetectionio/templates/edit/include_subtract.html
-msgid "test your jq here"
-msgstr "jqのテストはこちら"
+msgid ""
+"JSONPath: Prefix with <code>json:</code>, use <code>json:$</code> to force re-formatting if required, <a "
+"href=\"https://jsonpath.com/\" target=\"new\">test your JSONPath here</a>."
+msgstr ""
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid ""
-"Using <a href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> allows for complex filtering and processing of"
-" JSON data with built-in functions, regex, filtering, and more."
+"jq: Prefix with <code>jq:</code> and <a href=\"https://jqplay.org/\" target=\"new\">test your jq here</a>. Using <a "
+"href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> allows for complex filtering and processing of JSON "
+"data with built-in functions, regex, filtering, and more. See examples and documentation <a "
+"href=\"https://stedolan.github.io/jq/manual/\" target=\"new\">here</a>. Prefix <code>jqraw:</code> outputs the "
+"results as text instead of a JSON list."
 msgstr ""
-"<a href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> "
-"を使用すると、組み込み関数、正規表現、フィルタリングなどでJSONデータの複雑なフィルタリングと処理が可能です。"
-
-#: changedetectionio/templates/edit/include_subtract.html
-msgid "See examples and documentation"
-msgstr "例とドキュメントは"
-
-#: changedetectionio/templates/edit/include_subtract.html
-msgid "here"
-msgstr "こちら"
-
-#: changedetectionio/templates/edit/include_subtract.html
-msgid "Prefix <code>jqraw:</code> outputs the results as text instead of a JSON list."
-msgstr "<code>jqraw:</code> をプレフィックスとして付けると、結果がJSONリストではなくテキストとして出力されます。"
 
 #: changedetectionio/templates/edit/include_subtract.html
 msgid "jq support not installed"
@@ -3731,4 +3718,45 @@ msgstr "メイン設定"
 
 #~ msgid "The timezone was set from your browser, <strong>be sure to press save!</strong>"
 #~ msgstr "タイムゾーンはブラウザから設定されました。<strong>必ず保存を押してください！</strong>"
+
+#~ msgid ""
+#~ "A <strong>RegEx</strong> is a pattern that identifies exactly "
+#~ "which part inside of the text that you want to "
+#~ "extract."
+#~ msgstr "<strong>正規表現（RegEx）</strong>は、テキスト内の抽出したい部分を正確に指定するパターンです。"
+
+#~ msgid "Each RegEx group bracket <code>()</code> will be in its own column, the first column value is always the date."
+#~ msgstr "各正規表現のグループ括弧 <code>()</code> はそれぞれ独立した列になり、最初の列の値は常に日付です。"
+
+#~ msgid "Note!: //text() function does not work where the &lt;element&gt; contains &lt;![CDATA[]]&gt;"
+#~ msgstr "注意！: //text() 関数は &lt;element&gt; が &lt;![CDATA[]]&gt; を含む場合は動作しません"
+
+#~ msgid "JSONPath: Prefix with <code>json:</code>, use <code>json:$</code> to force re-formatting if required,"
+#~ msgstr "JSONPath: <code>json:</code> をプレフィックスとして付けます。必要に応じて <code>json:$</code> で再フォーマットを強制できます。"
+
+#~ msgid "test your JSONPath here"
+#~ msgstr "JSONPathのテストはこちら"
+
+#~ msgid "jq: Prefix with <code>jq:</code> and"
+#~ msgstr "jq: <code>jq:</code> をプレフィックスとして付けます。"
+
+#~ msgid "test your jq here"
+#~ msgstr "jqのテストはこちら"
+
+#~ msgid ""
+#~ "Using <a href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> allows for"
+#~ " complex filtering and processing of JSON data with built-"
+#~ "in functions, regex, filtering, and more."
+#~ msgstr ""
+#~ "<a href=\"https://stedolan.github.io/jq/\" target=\"new\">jq</a> "
+#~ "を使用すると、組み込み関数、正規表現、フィルタリングなどでJSONデータの複雑なフィルタリングと処理が可能です。"
+
+#~ msgid "See examples and documentation"
+#~ msgstr "例とドキュメントは"
+
+#~ msgid "here"
+#~ msgstr "こちら"
+
+#~ msgid "Prefix <code>jqraw:</code> outputs the results as text instead of a JSON list."
+#~ msgstr "<code>jqraw:</code> をプレフィックスとして付けると、結果がJSONリストではなくテキストとして出力されます。"
 
