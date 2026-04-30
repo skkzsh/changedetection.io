@@ -7,3 +7,12 @@ repos:
         args: [--fix]
       # Fomrat
       - id: ruff-format
+
+  - repo: local
+    hooks:
+      - id: dennis-errors
+        name: dennis lint (errors only)
+        language: system
+        entry: dennis-cmd lint --errorsonly changedetectionio/translations/
+        files: ^changedetectionio/translations/.*\.(po|pot)$
+        pass_filenames: false
