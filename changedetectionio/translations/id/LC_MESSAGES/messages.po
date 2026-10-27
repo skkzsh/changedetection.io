@@ -2756,16 +2756,11 @@ msgstr "Belum ada data harga yang tersedia untuk dibuat grafik."
 msgid "Could not load price history."
 msgstr "Tidak dapat memuat riwayat harga."
 
-#. FIXME: fragment msgids (#4074)
 #: changedetectionio/blueprint/watchlist/templates/watch-overview.html
 #: changedetectionio/processors/restock_diff/templates/restock_diff/difference.html
-msgid "Changes"
-msgstr "Perubahan"
-
-#: changedetectionio/blueprint/watchlist/templates/watch-overview.html
-#: changedetectionio/processors/restock_diff/templates/restock_diff/difference.html
-msgid "Average price"
-msgstr "Harga rata-rata"
+#, python-brace-format
+msgid "Average price {price}, {count} changes"
+msgstr "Harga rata-rata {price}, {count} Perubahan"
 
 #: changedetectionio/blueprint/watchlist/templates/watch-overview.html
 #: changedetectionio/processors/restock_diff/templates/restock_diff/difference.html

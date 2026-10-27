@@ -2666,16 +2666,11 @@ msgstr "グラフ化できる価格データがまだありません。"
 msgid "Could not load price history."
 msgstr "価格履歴を読み込めませんでした。"
 
-#. FIXME: fragment msgids (#4074)
 #: changedetectionio/blueprint/watchlist/templates/watch-overview.html
 #: changedetectionio/processors/restock_diff/templates/restock_diff/difference.html
-msgid "Changes"
-msgstr ""
-
-#: changedetectionio/blueprint/watchlist/templates/watch-overview.html
-#: changedetectionio/processors/restock_diff/templates/restock_diff/difference.html
-msgid "Average price"
-msgstr "平均価格"
+#, python-brace-format
+msgid "Average price {price}, {count} changes"
+msgstr "平均価格 {price}、{count} 件の変更"
 
 #: changedetectionio/blueprint/watchlist/templates/watch-overview.html
 #: changedetectionio/processors/restock_diff/templates/restock_diff/difference.html

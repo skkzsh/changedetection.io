@@ -2802,16 +2802,11 @@ msgstr "Nie ma jeszcze danych dotyczących cen, które można by przedstawić na
 msgid "Could not load price history."
 msgstr "Nie udało się załadować historii cen."
 
-#. FIXME: fragment msgids (#4074)
 #: changedetectionio/blueprint/watchlist/templates/watch-overview.html
 #: changedetectionio/processors/restock_diff/templates/restock_diff/difference.html
-msgid "Changes"
-msgstr "Zmiany"
-
-#: changedetectionio/blueprint/watchlist/templates/watch-overview.html
-#: changedetectionio/processors/restock_diff/templates/restock_diff/difference.html
-msgid "Average price"
-msgstr "Średnia cena"
+#, python-brace-format
+msgid "Average price {price}, {count} changes"
+msgstr "Średnia cena {price}, {count} Zmiany"
 
 #: changedetectionio/blueprint/watchlist/templates/watch-overview.html
 #: changedetectionio/processors/restock_diff/templates/restock_diff/difference.html

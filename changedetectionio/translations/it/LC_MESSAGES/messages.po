@@ -2649,15 +2649,10 @@ msgstr ""
 msgid "Could not load price history."
 msgstr ""
 
-#. FIXME: fragment msgids (#4074)
 #: changedetectionio/blueprint/watchlist/templates/watch-overview.html
 #: changedetectionio/processors/restock_diff/templates/restock_diff/difference.html
-msgid "Changes"
-msgstr ""
-
-#: changedetectionio/blueprint/watchlist/templates/watch-overview.html
-#: changedetectionio/processors/restock_diff/templates/restock_diff/difference.html
-msgid "Average price"
+#, python-brace-format
+msgid "Average price {price}, {count} changes"
 msgstr ""
 
 #: changedetectionio/blueprint/watchlist/templates/watch-overview.html

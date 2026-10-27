@@ -21,7 +21,7 @@
 
     const DEFAULT_I18N = { in_stock: 'In stock', out_of_stock: 'Out of stock',
         no_data: 'No price data available to graph yet.', load_error: 'Could not load price history.',
-        changes: 'Changes', avg_price: 'Average price',
+        stats: 'Average price {price}, {count} changes',
         price_low: 'Currently low', price_typical: 'Currently typical', price_high: 'Currently high',
         // {pct} is substituted with an already-formatted percentage, e.g. "80%". The percent sign is
         // NOT part of the msgid on purpose: a bare "%" followed by a letter (" of") parses as a
@@ -273,9 +273,10 @@
         }
 
         const avgPrice = prices.reduce((a, b) => a + b, 0) / prices.length;
-        const $stats = $('<div class="rg-stats"></div>')
-            .text((i18n.avg_price || 'Average price') + ' ' + fmtPrice(avgPrice, currency) +
-                  ', ' + (series ? series.length : data.length) + ' ' + (i18n.changes || 'Changes'));
+        const stats = (i18n.stats || 'Average price {price}, {count} changes')
+            .replace('{price}', fmtPrice(avgPrice, currency))
+            .replace('{count}', series ? series.length : data.length);
+        const $stats = $('<div class="rg-stats"></div>').text(stats);
 
         $header.append($pill).append($stats);
         $container.prepend($header);
