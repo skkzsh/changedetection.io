@@ -14,6 +14,7 @@ from threading import Event
 
 import flask_login
 import timeago
+from babel.numbers import format_decimal, get_currency_precision
 from blinker import signal
 from flask import (
     Flask,
@@ -488,6 +489,37 @@ def _jinja2_filter_format_number_locale(value: float) -> str:
     # Format the number with two decimal places (locale format string will return 6 decimal)
     formatted_value = locale.format_string("%.2f", value, grouping=True)
     return formatted_value
+
+
+def _format_price(value, currency=None, locale_name=None) -> str:
+    """Format a price for display using the currency's ISO 4217 decimal places.
+
+    Trailing zeroes are dropped, so 190.00 USD becomes "190 USD" and 190.50 USD becomes
+    "190.5 USD". The currency label is whatever the page declared (e.g. "JPY") - we don't
+    invent a symbol. Values that aren't numeric are returned untouched.
+    """
+    if value is None:
+        return ''
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        return str(value)
+
+    code = str(currency).strip() if currency is not None else ''
+
+    # Without a detected currency we still group the number and allow the usual two decimals.
+    precision = get_currency_precision(code.upper()) if code else 2
+    # '#' is an optional digit, so trailing zeroes are omitted: 190.00 -> 190, 190.50 -> 190.5
+    number_format = '#,##0' + ('.' + '#' * precision if precision else '')
+
+    formatted = format_decimal(number, format=number_format, locale=locale_name or 'en_GB')
+    return f"{formatted} {code}" if code else formatted
+
+
+@app.template_filter('format_price_locale')
+def _jinja2_filter_format_price_locale(value, currency=None) -> str:
+    "Formats a price using the page's declared currency and the UI locale for grouping."
+    return _format_price(value, currency=currency, locale_name=str(get_locale() or 'en_GB'))
 
 
 @app.template_filter('format_int_locale')

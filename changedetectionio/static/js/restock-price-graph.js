@@ -57,9 +57,32 @@
         });
     }
 
+    // ISO 4217 decimal places for the page's declared currency (JPY=0, USD=2, KWD=3).
+    // Intl carries the currency data, so there is no per-currency table to maintain here.
+    function currencyPrecision(currency) {
+        if (!currency) return 2;
+        try {
+            return new Intl.NumberFormat('en', { style: 'currency', currency: currency })
+                .resolvedOptions().maximumFractionDigits;
+        } catch (e) {
+            return 2;
+        }
+    }
+
     function fmtPrice(v, currency) {
-        const n = Math.round(v * 100) / 100;
-        return (currency || '') + (Number.isInteger(n) ? n : n.toFixed(2));
+        if (v === null || v === undefined || isNaN(v)) return '';
+        const code = String(currency || '').trim();
+        const digits = currencyPrecision(code.toUpperCase());
+        const options = { minimumFractionDigits: 0, maximumFractionDigits: digits };
+        let n;
+        try {
+            // minimumFractionDigits=0 drops trailing zeroes: 190.00 -> 190, 190.50 -> 190.5
+            n = Number(v).toLocaleString(document.documentElement.lang || undefined, options);
+        } catch (e) {
+            // <html lang> can be missing or invalid - fall back to the browser's locale.
+            n = Number(v).toLocaleString(undefined, options);
+        }
+        return code ? n + ' ' + code : n;
     }
 
     // Thin a large price series down to ~target points for drawing (you can't perceive more

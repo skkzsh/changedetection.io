@@ -316,7 +316,7 @@ def test_itemprop_percent_threshold(client, live_server, measure_memory_usage, d
         wait_for_all_checks(client)
 
     res = client.get(url_for("watchlist.index"))
-    assert b'2,100.00' in res.data or b'2100.00' in res.data #depending on locale
+    assert b'2,100 EUR' in res.data or b'2100 EUR' in res.data # trailing .00 is dropped, depending on locale
     # +7.67% total drift since the creep started, yet still unread-free -> comparison is vs PREVIOUS check
     assert b'has-unread-changes' not in res.data
 
@@ -594,6 +594,11 @@ def test_restock_diff_price_data_ajax(client, live_server, measure_memory_usage,
         assert key in summary
     assert summary['status'] in ('low', 'typical', 'high')
     assert summary['min'] <= summary['avg'] <= summary['max']
+
+    # The history page summary uses the same currency-aware formatter as the watch list.
+    res = client.get(url_for("ui.ui_diff.diff_history_page", uuid=uuid))
+    assert res.status_code == 200
+    assert b'180.45 EUR' in res.data
 
     # XLSX export of the history
     res = client.get(url_for("ui.ui_diff.diff_history_page_processor_export", uuid=uuid))

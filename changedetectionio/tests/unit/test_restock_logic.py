@@ -64,5 +64,40 @@ class TestDiffBuilder(unittest.TestCase):
             assert query_price_availability(extract_metadata_pure_python(ld_json)).get('price') == expected, f"pure python JSON-LD {raw!r}"
             assert query_price_availability(extract_metadata_pure_python(microdata_text)).get('price') == expected, f"pure python microdata text {raw!r}"
 
+
+class TestPriceFormatting(unittest.TestCase):
+    """Price labels follow the page's declared currency and its ISO 4217 decimal places."""
+
+    @staticmethod
+    def _format(value, currency=None, locale_name=None):
+        from changedetectionio.flask_app import _format_price
+        return _format_price(value, currency=currency, locale_name=locale_name)
+
+    def test_jpy_has_no_decimals(self):
+        self.assertEqual(self._format(12345.0, 'JPY', 'ja'), '12,345 JPY')
+        self.assertEqual(self._format(12345.6, 'JPY', 'ja'), '12,346 JPY')
+
+    def test_trailing_zeroes_are_dropped(self):
+        self.assertEqual(self._format(190.0, 'USD', 'en_US'), '190 USD')
+        self.assertEqual(self._format(190.5, 'USD', 'en_US'), '190.5 USD')
+        self.assertEqual(self._format(190.95, 'USD', 'en_US'), '190.95 USD')
+
+    def test_currency_precision(self):
+        self.assertEqual(self._format(5000.0, 'KRW', 'en_US'), '5,000 KRW')
+        self.assertEqual(self._format(1.234, 'KWD', 'en_US'), '1.234 KWD')
+
+    def test_locale_grouping_and_separator(self):
+        self.assertEqual(self._format(1234567.5, 'EUR', 'ja'), '1,234,567.5 EUR')
+        self.assertEqual(self._format(1234567.5, 'EUR', 'de_DE'), '1.234.567,5 EUR')
+
+    def test_missing_currency(self):
+        self.assertEqual(self._format(190.5, None, 'en_US'), '190.5')
+        self.assertEqual(self._format(190.0, '', 'en_US'), '190')
+
+    def test_non_numeric_values_pass_through(self):
+        self.assertEqual(self._format(None, 'JPY', 'ja'), '')
+        self.assertEqual(self._format('contact us', 'JPY', 'ja'), 'contact us')
+
+
 if __name__ == '__main__':
     unittest.main()
